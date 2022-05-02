@@ -36,8 +36,8 @@
 
 .tuotteet > div {
   background-color: whitesmoke;
-  padding: 150px;
   border-style: solid;
   border-color: gray;
-
+  height: 300px;
+  width: 300px;
 }
