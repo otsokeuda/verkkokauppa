@@ -32,12 +32,30 @@
   display: flex;  
   flex-flow: row wrap;
   padding: 10px;
+  
 }
 
 .tuotteet > div {
-  background-color: whitesmoke;
+  background-color: white;
   border-style: solid;
   border-color: gray;
-  height: 300px;
-  width: 300px;
+  padding: 10px;
+  height: 550px;
+  width: 400px;
+}
+
+.images {
+  height: 400px;
+  width: 400px;
+}
+
+.names {
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+.prices {
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

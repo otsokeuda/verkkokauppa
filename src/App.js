@@ -1,5 +1,5 @@
-
 import './App.css';
+import products from "./products";
 
 function App() {
   return (
@@ -15,14 +15,22 @@ function App() {
         <h2>TUOTTEET</h2>
       </div>
 
+     
+
       <div className='tuotteet'>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-      </div>
+
+      {products.map((item, i) => (
+        <div key={i}>
+
+          <img className="images" src={item.imageUrl} alt="images"></img>
+
+          <p className='names'>{item.title}</p>
+
+          <h1 className='prices'>{item.price}€</h1>
+          
+        </div>
+        ))}
+       </div>
 
     </div>
   );

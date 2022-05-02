@@ -1,0 +1,65 @@
+[
+    {
+      "id": 485902843,
+      "title": "Bosch Serie 6 pyykinpesukone WAU28UE9SN",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002761565/206103/bosch-serie-6-pyykinpesukone-wau28ue9sn--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 429,
+      "category": "kodinkoneet"
+    },
+    {
+      "id": 27495739,
+      "title": "Weber Q 3000 Titanium kaasugrilli",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002197362/16409/weber-q-3000-titanium-kaasugrilli--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 649,
+      "category": "grillit"
+    },
+    {
+      "id": 595603848,
+      "title": "Siemens iQ300 astianpesukone SN43HW70CS (valkoinen)",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002761801/206108/siemens-iq300-astianpesukone-sn43hw70cs-valkoinen--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 449,
+      "category": "kodinkoneet"
+    },
+    {
+      "id": 888573939,
+      "title": "Bosch Serie 2 Readyy’y varsi-imuri BBHF214B",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002765837/327323/bosch-serie-2-readyyy-varsi-imuri-bbhf214b--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 99,
+      "category": "kodinkoneet"
+    },
+    {
+      "id": 5638297847,
+      "title": "Xiaomi Mi Robot Vacuum Mop 2 Pro + robotti-imuri BHR4707GL (musta)",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002854684/374080/xiaomi-mi-robot-vacuum-mop-2-pro-robotti-imuri-bhr4707gl-musta--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 329,
+      "category": "elektroniikka"
+    },
+    {
+      "id": 11123234,
+      "title": "Xiaomi Mi Robot Vacuum Mop 2 Pro + robotti-imuri BHR4707GL (musta)",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002854684/374080/xiaomi-mi-robot-vacuum-mop-2-pro-robotti-imuri-bhr4707gl-musta--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 329,
+      "category": "elektroniikka"
+    },
+    {
+      "id": 3277463,
+      "title": "Asus VivoBook S14 S433 i3/8/128 14\" kannettava (light grey)",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002768676/305405/asus-vivobook-s14-s433-i38128-14-kannettava-light-grey--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 499,
+      "category": "elektroniikka"
+    },
+    {
+      "id": 18463892,
+      "title": "Samsung Galaxy Z Flip 3 älypuhelin 8/128GB (musta)",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002804669/340898/samsung-galaxy-z-flip-3-alypuhelin-8128gb-musta--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 999,
+      "category": "elektroniikka"
+    },
+    {
+      "id": 238483811,
+      "title": "Samsung Galaxy Watch4 Classic 46mm LTE älykello (musta)",
+      "imageUrl": "https://www.gigantti.fi/image/dv_web_D180001002803079/333814/samsung-galaxy-watch4-classic-46mm-lte-alykello-musta--pdp_zoom-3000--pdp_main-960.jpg",
+      "price": 449,
+      "category": "elektroniikka"
+    }
+  ]
