@@ -7,11 +7,13 @@
   padding: 5px;
   background-color: gray; 
   border-bottom: solid;
+  position:sticky;
+  top:0px;
 }
 
 .logo {
   background-color: gray;
-  color: greenyellow;
+  color: lightgreen;
   padding-right: 10px;
 }
 
@@ -40,7 +42,7 @@
   border-style: solid;
   border-color: gray;
   padding: 10px;
-  height: 550px;
+  height: 580px;
   width: 400px;
 }
 
@@ -58,4 +60,28 @@
 .prices {
   background-color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart {
+  background-color: lightgreen;
+  margin-left:auto;
+  margin-right:0;
+}
+
+.inCart {
+  position: sticky;
+  top: 65px;
+  float: right;
+  max-width: 450px;
+  padding-right: 5px;
+}
+
+.icon {
+  background-color: lightgreen;
+  font-size: 35px;
+}
+
+.icon2 {
+  background-color: lightgreen;
+  font-size: 35px;
 }
