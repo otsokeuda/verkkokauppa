@@ -1,48 +1,54 @@
 * {
-  background-color: lightgrey;
+  background-color: lightsteelblue;
 }
 
 .top {
   display: flex;
   padding: 5px;
-  background-color: gray; 
+  background-color: rgb(95, 125, 150); 
   border-bottom: solid;
+  border-color: grey;
+  border-width: 1px;
   position:sticky;
   top:0px;
 }
 
 .logo {
-  background-color: gray;
-  color: lightgreen;
+  background-color: rgb(95, 125, 150);
+  color: rgb(20, 199, 20);
   padding-right: 10px;
 }
 
 .search {
-  background-color: rgb(211, 211, 211);
+  background-color: azure;
   width: 70%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 18px;
+  font-size: 16px;
+  border: none;
 }
 
-
 .teksti {
-  display: flex;
   margin-left: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  color: darkslategrey;
 }
 
 .tuotteet {
   display: flex;  
   flex-flow: row wrap;
   padding: 10px;
-  
 }
 
 .tuotteet > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: white;
-  border-style: solid;
-  border-color: gray;
-  padding: 10px;
-  height: 580px;
+  padding: 15px;
+  height: 600px;
   width: 400px;
 }
 
@@ -58,14 +64,45 @@
 }
 
 .prices {
-  background-color: white;
+  align-self: start;
+  padding: 5px;
+  background-color: orange;
+  color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.lisää {
+  background-color: rgb(20, 199, 20);
+  color: white;
+  font-weight: bold;
+  font-size: 15px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+  border-radius: 30px;
+  border:none;
+  cursor: pointer;
+  align-self: start;
+}
+
 .cart {
-  background-color: lightgreen;
+  background-color: rgb(20, 199, 20);
   margin-left:auto;
   margin-right:0;
+  border-radius: 5px;
+  border-color: azure;
+  cursor: pointer;
+}
+
+.icon {
+  background-color: rgb(20, 199, 20);
+  font-size: 35px;
+  color: azure;
+}
+
+.icon2 {
+  background-color: rgb(20, 199, 20);
+  font-size: 35px;
+  color: azure;
 }
 
 .inCart {
@@ -75,14 +112,3 @@
   max-width: 450px;
   padding-right: 5px;
 }
-
-.icon {
-  background-color: lightgreen;
-  font-size: 35px;
-}
-
-.icon2 {
-  background-color: lightgreen;
-  font-size: 35px;
-}
-

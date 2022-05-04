@@ -174,9 +174,9 @@ function App() {
         {cartTotals()}
       </div>}
 
-      <div className='teksti'>
-        <h2>TUOTTEET</h2>
-      </div>
+      
+      <p className='teksti'>TUOTTEET</p>
+      
 
 
        <div className="tuotteet">
@@ -186,8 +186,8 @@ function App() {
 
             <img className="images" src={item.imageUrl} alt="images"></img>
             <p className='names'>{item.title}</p>
-            <h1 className='prices'>{item.price}€</h1>
-            <button onClick={() => addToCart(i)}>{"Lisää ostoskoriin"}</button>
+            <h2 className='prices'>{item.price}€</h2>
+            <button className='lisää' onClick={() => addToCart(i)}>Lisää ostoskoriin</button>
 
           </div>
           ))
