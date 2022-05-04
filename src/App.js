@@ -8,7 +8,24 @@ import { ImCross } from 'react-icons/im';
 function App() {
 
   const [cart, setCart] = useState(products);
-  const [visible, setVisible] = React.useState(false);
+  const [visible, setVisible] = useState(false);
+  const [name, setName] = useState('');
+  const [foundUsers, setFoundUsers] = useState(products);
+
+  const filter = (e) => {
+    const keyword = e.target.value;
+
+    if (keyword !== '') {
+      const results = products.filter((item) => {
+        return item.title.toLowerCase().startsWith(keyword.toLowerCase());
+      });
+      setFoundUsers(results);
+    } else {
+      setFoundUsers(products);
+    }
+
+    setName(keyword);
+  };
 
   const addToCart = i => {
     alert("Lisätty ostoskoriin.")
@@ -138,7 +155,15 @@ function App() {
 
       <header className="top">
         <p className='logo'>VERKKOKAUPPA</p>
-        <input className='search'></input>
+
+      <input
+       type="search"
+       value={name}
+       onChange={filter}
+       className="search"
+       placeholder="Hae tuotteita">
+      </input>
+        
         <button className='cart' onClick={() => setVisible(!visible)}>{visible ? <ImCross className='icon2'/> : <TiShoppingCart className='icon'/>}</button>
      
       </header>
@@ -153,25 +178,26 @@ function App() {
         <h2>TUOTTEET</h2>
       </div>
 
-     
 
-      <div className='tuotteet'>
+       <div className="tuotteet">
+        {foundUsers && foundUsers.length > 0 ? (
+          foundUsers.map((item, i) => (
+          <div>
 
-      {products.map((item, i) => (
-        <div key={i}>
+            <img className="images" src={item.imageUrl} alt="images"></img>
+            <p className='names'>{item.title}</p>
+            <h1 className='prices'>{item.price}€</h1>
+            <button onClick={() => addToCart(i)}>{"Lisää ostoskoriin"}</button>
 
-          <img className="images" src={item.imageUrl} alt="images"></img>
-          <p className='names'>{item.title}</p>
-          <h1 className='prices'>{item.price}€</h1>
-
-          
-          <button onClick={() => addToCart(i)}>{"Lisää ostoskoriin"}</button>
-        
           </div>
-        ))}
-       </div>
+          ))
+          ) : (
+          <h1>Ei tuloksia :(</h1>
+        )}
+      </div>
+</div>
 
-    </div>
+    
   );
 }
 
