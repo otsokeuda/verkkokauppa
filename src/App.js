@@ -11,7 +11,7 @@ function App() {
   const [visible, setVisible] = React.useState(false);
 
   const addToCart = i => {
-    setVisible(!visible)
+    alert("Lisätty ostoskoriin.")
     setCart(prevState =>
       prevState.map((item, o) => {
         if (i === o) {
@@ -22,8 +22,9 @@ function App() {
           };
         }
         return item;
+        
       })
-    );
+    );   
     
   };
 
@@ -98,10 +99,10 @@ function App() {
         <b>
           <p>Tuotteita korissa: {cartCountTotal}</p>
           <p>
-            Loppusumma: $
+            Loppusumma:{" "}
             {Number.isInteger(cartPriceTotal)
               ? cartPriceTotal
-              : cartPriceTotal.toFixed(2)}
+              : cartPriceTotal.toFixed(2)}€
           </p>
         </b>
       </>
@@ -117,10 +118,10 @@ function App() {
             {item.count} <button onClick={() => increaseQuantity(i)}>+</button>
           </p>
           <p>
-            Yhteensä: $
+            Yhteensä:{" "}
             {Number.isInteger(item.count * item.price)
               ? item.count * item.price
-              : `${(item.count * item.price).toFixed(2)}`}
+              : `${(item.count * item.price).toFixed(2)}`}€
           </p>
           <button onClick={() => removeFromCart(i)}>Poista korista</button>
           <hr />
@@ -162,7 +163,9 @@ function App() {
           <img className="images" src={item.imageUrl} alt="images"></img>
           <p className='names'>{item.title}</p>
           <h1 className='prices'>{item.price}€</h1>
-          <button onClick={() => addToCart(i)}>Lisää ostoskoriin</button>
+
+          
+          <button onClick={() => addToCart(i)}>{"Lisää ostoskoriin"}</button>
         
           </div>
         ))}
