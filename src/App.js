@@ -10,7 +10,7 @@ function App() {
   const [cart, setCart] = useState(products);
   const [visible, setVisible] = useState(false);
   const [name, setName] = useState('');
-  const [foundUsers, setFoundUsers] = useState(products);
+  const [foundUsers, setFoundProducts] = useState(products);
 
   const filter = (e) => {
     const keyword = e.target.value;
@@ -19,9 +19,9 @@ function App() {
       const results = products.filter((item) => {
         return item.title.toLowerCase().startsWith(keyword.toLowerCase());
       });
-      setFoundUsers(results);
+      setFoundProducts(results);
     } else {
-      setFoundUsers(products);
+      setFoundProducts(products);
     }
 
     setName(keyword);
